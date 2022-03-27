@@ -1,0 +1,12 @@
+@use "../abstracts";
+
+.container{
+    max-width: 1020px;
+    margin: auto;
+    display: flex;
+
+    @include abstracts.mq(){
+        flex-direction: column;
+    }
+
+}

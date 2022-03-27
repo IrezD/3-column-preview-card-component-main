@@ -1,0 +1,28 @@
+@use "../base";
+
+.column .btn{
+    background-color: base.$neutral_color_01;
+    text-decoration: none;
+    display: inline-block;
+    font-family: base.$font_secondary;
+    color: base.$Bright_orange;
+    padding: 15px 35px;
+    border-radius: 40px;
+    margin-bottom: 55px;
+    transition: background-color 250ms, outline 250ms, color 250ms;
+
+    &--2{
+        color: base.$Dark_cyan_500;
+    }
+
+    &--3{
+        color: base.$Dark_cyan_800;
+    }
+
+    &:hover{
+        background-color: transparent;
+        outline: 3px solid base.$neutral_color_01;
+        color: base.$neutral_color_01;
+    }
+
+}

@@ -1,0 +1,17 @@
+// @use "sass:map";
+// @use "../abstracts/breakpoints" as abstracts;
+
+// @mixin mq($key) {
+//     $size: map.get(abstracts.$breakpoint, $key);
+
+//      @media (min-width:$size){
+//          @content
+//      }
+// }
+
+@mixin mq() {
+    @media (max-width:670px){
+        @content
+    }
+    
+}

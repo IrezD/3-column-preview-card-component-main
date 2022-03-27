@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #f2f2f2;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+h1, p {
+  font-size: 1rem;
+}
+
+.container {
+  max-width: 1020px;
+  margin: auto;
+  display: flex;
+}
+@media (max-width: 670px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+.column .btn {
+  background-color: #f2f2f2;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Lexend Deca", cursive;
+  color: #e38826;
+  padding: 15px 35px;
+  border-radius: 40px;
+  margin-bottom: 55px;
+  transition: background-color 250ms, outline 250ms, color 250ms;
+}
+.column .btn--2 {
+  color: #006970;
+}
+.column .btn--3 {
+  color: #004241;
+}
+.column .btn:hover {
+  background-color: transparent;
+  outline: 3px solid #f2f2f2;
+  color: #f2f2f2;
+}
+
+.column > * {
+  margin: 0 58px;
+}
+@media (max-width: 670px) {
+  .column > * {
+    margin: 0 38px;
+  }
+}
+
+.column {
+  min-height: 560px;
+}
+@media (max-width: 670px) {
+  .column {
+    min-height: 310px;
+  }
+}
+.column--one {
+  background-color: #e38826;
+  border-radius: 8px 0 0 8px;
+}
+@media (max-width: 670px) {
+  .column--one {
+    border-radius: 0;
+  }
+}
+.column--two {
+  background-color: #006970;
+}
+.column--three {
+  background-color: #004241;
+  border-radius: 0 8px 8px 0;
+}
+@media (max-width: 670px) {
+  .column--three {
+    border-radius: 0;
+  }
+}
+.column__icon {
+  padding: 50px 0 42px 0;
+}
+@media (max-width: 670px) {
+  .column__icon {
+    padding: 50px 0 32px 0;
+  }
+}
+.column__title {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.7rem;
+  padding-bottom: 28px;
+}
+.column__body {
+  font-family: "Lexend Deca", cursive;
+  font-size: 0.948rem;
+  line-height: 1.9;
+  padding-bottom: 92px;
+  letter-spacing: 0.7px;
+}
+@media (max-width: 670px) {
+  .column__body {
+    line-height: 2.1;
+    padding-bottom: 32px;
+    letter-spacing: none;
+  }
+}
+
+body {
+  background-color: #f2f2f2;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 670px) {
+  body {
+    padding: 90px 20px;
+  }
+}

@@ -1,0 +1,16 @@
+@use "../sass/base";
+@use "../sass/abstracts";
+@use "../sass/util";
+@use "../sass/components";
+
+body{
+    background-color: base.$neutral_color_01;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @include abstracts.mq(){
+        padding: 90px 20px;
+    }
+}
